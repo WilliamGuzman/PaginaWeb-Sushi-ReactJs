@@ -1,0 +1,100 @@
+.oriental-section{
+    position: relative;
+    overflow: hidden;
+}
+
+.container-oriental-items{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+
+.container-oriental-items > img{
+    border-radius: 50%;
+}
+
+.oriental-info > h1{
+    font-weight: 700;
+    font-size: 4rem;
+    color: #2fb4ac;
+}
+
+.oriental-info > p{
+    color: #2fb4ac;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-bottom: 70px;
+}
+.confeti1{
+    position: absolute;
+}
+
+.confeti2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.confeti3{
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+/*Responsive*/
+@media only screen and (max-width:1280px){
+    .confeti1{
+        width: 50%;
+    }
+    .confeti2{
+        width: 30%;
+    }
+.container-oriental-items > img{
+        width: 95%;
+    }
+    .oriental-info > h1{
+        font-size: 2.8rem;
+    }
+
+    .oriental-info > p{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container-oriental-items > img{
+        grid-area: orientalSushi;
+        justify-self: center;
+    }
+    
+    .oriental-info{
+        grid-area: orientalInfo;
+        justify-self: center;
+    }
+    .container-oriental-items {
+        padding-top: 6rem;
+        grid-template-areas:
+          "orientalSushi"
+          "orientalInfo";
+        justify-self: center;
+        grid-gap: 0;
+        text-align: center;
+      }
+
+      .oriental-info > Button{
+          margin-bottom: 80px;
+      }
+}
+
+@media only screen and (max-width: 480px){
+    .confeti3{
+        left: 0;
+        width: 15%;
+    }
+}

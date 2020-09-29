@@ -1,0 +1,57 @@
+.section-special-menu {
+  position: relative;
+  background-color: #e59090;
+}
+
+.section-special-menu > .confeti4 {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.section-special-menu > .confeti5 {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
+.section-special-menu > svg {
+  position: absolute;
+  bottom: 0;
+}
+
+.special-menu-container > h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 150px;
+  margin-top: 0;
+}
+
+.special-menu-container-card {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 200px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+  .special-menu-container-card {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 0;
+    padding-top: 2rem;
+  }
+
+  .section-special-menu > .confeti4 {
+    width: 30%;
+  }
+  
+  .section-special-menu > .confeti5 {
+    width: 30%;
+  }
+}

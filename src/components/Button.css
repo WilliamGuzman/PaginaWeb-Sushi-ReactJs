@@ -1,0 +1,26 @@
+.btn{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 5rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.color1{
+    background-color: #6db3ab;
+}
+
+.color2{
+    background-color: #e59090;
+}
+
+.color3{
+    background-color: #21243d;
+}

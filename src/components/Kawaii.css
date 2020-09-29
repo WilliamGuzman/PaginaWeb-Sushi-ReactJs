@@ -1,0 +1,119 @@
+.kawaii {
+  position: relative;
+  background-color: #6edad4;
+  overflow: hidden;
+}
+
+.kawaii > svg {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.confeti8 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.confeti9 {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.kawaii-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  position: relative;
+  z-index: 3;
+}
+
+.kawaii-container > img {
+  border-radius: 50%;
+}
+
+.kawaii-info > h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.kawaii-info > p {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 80px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1280px) {
+  .kawaii-info > h1 {
+    font-size: 3.1rem;
+  }
+
+  .kawaii-info > p {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  .kawaii-info > Button {
+      font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .kawaii-container > img {
+    grid-area: kawaiiImage;
+  }
+
+  .kawaii-info {
+    grid-area: kawaiiInfo;
+  }
+  .kawaii-container {
+    grid-template-areas:
+      "kawaiiImage kawaiiImage"
+      "kawaiiInfo kawaiiInfo";
+    row-gap: 0;
+    justify-items: center;
+    padding-top: 8rem;
+  }
+
+  .kawaii-info {
+    text-align: center;
+  }
+
+  .kawaii-info > Button {
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .kawaii-container > img {
+    width: 100%;
+  }
+
+  .kawaii-info > h1 {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  .kawaii-info > p {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .confeti8 {
+    width: 50%;
+  }
+
+  .confeti9 {
+    width: 50%;
+  }
+}

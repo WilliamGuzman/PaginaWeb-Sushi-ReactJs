@@ -1,0 +1,57 @@
+.quotes {
+  background-image: url("/images/quotes.jpg");
+  background-position: top center;
+  background-size: cover;
+  height: 120vh;
+  position: relative;
+}
+
+.quotes:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.quotes > svg {
+  position: absolute;
+  bottom: 0;
+}
+
+.container-quotes {
+  position: relative;
+  z-index: 10;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.container-quotes > img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.container-quotes > p {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.container-quotes > h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 480px) {
+  .container-quotes > img {
+    width: 50%;
+  }
+  .container-quotes > p {
+    font-size: 2rem;
+  }
+}

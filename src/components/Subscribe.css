@@ -1,0 +1,106 @@
+.subscribe {
+  position: relative;
+  background-color: #ffe98a;
+  overflow: hidden;
+}
+
+.confeti7-subs {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+.confeti8-subs {
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  transform: scale(-1, -1);
+}
+
+.subscribe-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.subscribe-container > h1 {
+  color: #21243d;
+  font-size: 4rem;
+}
+
+.subscribe-container > p {
+  color: #21243d;
+  font-size: 1.6rem;
+}
+
+.form-subscribe {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.form-subscribe > input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.form-subscribe > input::placeholder {
+  padding-left: 50px;
+  font-size: 1.3rem;
+  color: #a3a3a3;
+}
+
+.form-subscribe > Button {
+  height: 80px;
+  position: relative;
+  left: -100px;
+  height: 65px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .confeti7-subs {
+    width: 30%;
+  }
+
+  .confeti8-subs {
+    width: 30%;
+  }
+
+  .subscribe-container {
+    width: 90%;
+  }
+  .form-subscribe{
+      flex-direction: column;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .form-subscribe > input {
+      margin-bottom: 50px;
+  }
+  .form-subscribe > Button {
+    position: static;
+    margin-bottom: 150px;
+    padding: 10px 55px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .subscribe-container > h1 {
+    font-size: 3rem;
+  }
+  
+  .subscribe-container > p {
+    font-size: 1.3rem;
+  }
+
+  .form-subscribe{
+    width: 90%;
+  }
+}
